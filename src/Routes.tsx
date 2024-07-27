@@ -16,7 +16,7 @@ import History from "./components/dashboard/history/History";
 
 const Router = createBrowserRouter([
   {
-    path: "/",
+    path: "/KWallet-frontend/",
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
