@@ -72,7 +72,7 @@ const SignUpForm = () => {
 
       setIsLoading(false);
 
-      navigate("/sign-in");
+      navigate("/KWallet-frontend/sign-in");
     } catch (error) {
       if (isAxiosError(error) && error.response) {
         ErrorNotify(error.response.data.error);

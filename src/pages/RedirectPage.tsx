@@ -7,7 +7,7 @@ const RedirectPage = () => {
   const data = useUserStore();
   const user = useAuth();
 
-  if (!user) return <Navigate to="/home" />;
+  if (!user) return <Navigate to="/KWallet-frontend/home" />;
 
   useEffect(() => {
     data.setUserUsername(localStorage.getItem("phonenumber")!);
@@ -19,7 +19,7 @@ const RedirectPage = () => {
     data.setUserBalance(localStorage.getItem("balance")!);
   }, []);
 
-  return <Navigate to="/dashboard/main" />;
+  return <Navigate to="/KWallet-frontend/dashboard/main" />;
 };
 
 export default RedirectPage;

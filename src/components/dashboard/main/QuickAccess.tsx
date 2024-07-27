@@ -27,7 +27,7 @@ const QuickAccess = () => {
           <Button
             sx={QAButtonStyle}
             colorScheme="purple"
-            onClick={() => navigate("/dashboard/buy")}
+            onClick={() => navigate("/KWallet-frontend/dashboard/buy")}
           >
             Buy
           </Button>
@@ -41,7 +41,7 @@ const QuickAccess = () => {
           <Button
             colorScheme="purple"
             sx={QAButtonStyle}
-            onClick={() => navigate("/dashboard/receive")}
+            onClick={() => navigate("/KWallet-frontend/dashboard/receive")}
           >
             Receive
           </Button>
@@ -55,7 +55,7 @@ const QuickAccess = () => {
           <Button
             colorScheme="purple"
             sx={QAButtonStyle}
-            onClick={() => navigate("/dashboard/send")}
+            onClick={() => navigate("/KWallet-frontend/dashboard/send")}
           >
             Send
           </Button>
@@ -69,7 +69,7 @@ const QuickAccess = () => {
           <Button
             colorScheme="purple"
             sx={QAButtonStyle}
-            onClick={() => navigate("/dashboard/history")}
+            onClick={() => navigate("/KWallet-frontend/dashboard/history")}
           >
             History
           </Button>

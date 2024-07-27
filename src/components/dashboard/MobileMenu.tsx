@@ -38,7 +38,7 @@ const MobileMenu = () => {
         <MenuItem
           onClick={() => {
             localStorage.removeItem("tokenKey");
-            navigate("/home");
+            navigate("/KWallet-frontend/home");
           }}
         >
           <Flex cursor="pointer" mx="16px" gap="8px">

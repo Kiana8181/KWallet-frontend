@@ -35,27 +35,27 @@ const Sidebar = () => {
   const items = [
     {
       title: "Dasboard",
-      link: "/dashboard/main",
+      link: "/KWallet-frontend/dashboard/main",
       icon: <MdSpaceDashboard size="30px" />,
     },
     {
       title: "Send",
-      link: "/dashboard/send",
+      link: "/KWallet-frontend/dashboard/send",
       icon: <IoIosSend size="30px" />,
     },
     {
       title: "Receive",
-      link: "/dashboard/receive",
+      link: "/KWallet-frontend/dashboard/receive",
       icon: <GiReceiveMoney size="30px" />,
     },
     {
       title: "Buy",
-      link: "/dashboard/buy",
+      link: "/KWallet-frontend/dashboard/buy",
       icon: <FaRegCreditCard size="30px" />,
     },
     {
       title: "History",
-      link: "/dashboard/history",
+      link: "/KWallet-frontend/dashboard/history",
       icon: <LuHistory size="30px" />,
     },
   ];
@@ -97,7 +97,7 @@ const Sidebar = () => {
           gap="8px"
           onClick={() => {
             localStorage.removeItem("tokenKey");
-            navigate("/home");
+            navigate("/KWallet-frontend/home");
           }}
         >
           <ImExit size="30px" />
