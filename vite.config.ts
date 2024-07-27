@@ -5,8 +5,4 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/kwallet/",
   plugins: [react()],
-  server: {
-    host: "0.0.0.0", // This allows external connections
-    port: 5173, // Your desired port number
-  },
 });
