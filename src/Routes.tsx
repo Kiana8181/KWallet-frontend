@@ -1,22 +1,21 @@
-import { createBrowserRouter } from "react-router-dom";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
+import { createHashRouter } from "react-router-dom";
+import Buy from "./components/dashboard/buy/Buy";
+import History from "./components/dashboard/history/History";
+import Main from "./components/dashboard/main/Main";
+import Receive from "./components/dashboard/receive/Receive";
+import Send from "./components/dashboard/send/Send";
 import Dashboard from "./pages/Dashboard";
 import ErrorPage from "./pages/ErrorPage";
 import Home from "./pages/Home";
 import Layout from "./pages/Layout";
 import PrivateRoutes from "./pages/PrivateRoutes";
 import RedirectPage from "./pages/RedirectPage";
-import Main from "./components/dashboard/main/Main";
-import Receive from "./components/dashboard/receive/Receive";
-import SendForm from "./components/dashboard/send/SendForm";
-import Send from "./components/dashboard/send/Send";
-import Buy from "./components/dashboard/buy/Buy";
-import History from "./components/dashboard/history/History";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
-const Router = createBrowserRouter([
+const Router = createHashRouter([
   {
-    path: "/KWallet-frontend/",
+    path: "/",
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [

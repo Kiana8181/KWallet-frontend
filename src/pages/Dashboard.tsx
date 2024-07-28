@@ -9,7 +9,7 @@ const Dashboard = () => {
 
   return (
     <>
-      {pathname !== "/KWallet-frontend/home" && (
+      {pathname !== "/home" && (
         <Show below="lg">
           <MobileMenu />
         </Show>

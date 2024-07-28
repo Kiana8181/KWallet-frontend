@@ -21,7 +21,7 @@ const DashboardFooter = () => {
       <Center height="100%">
         <Grid templateColumns="repeat(5, 1fr)" width="100vw">
           <Center>
-            <NavLink to={"/KWallet-frontend/dashboard/buy"} color="#CED4DD">
+            <NavLink to={"/dashboard/buy"} color="#CED4DD">
               {({ isActive }) =>
                 isActive ? (
                   <FaRegCreditCard color="#9F7AEA" size={28} />
@@ -33,7 +33,7 @@ const DashboardFooter = () => {
           </Center>
 
           <Center>
-            <NavLink to={"/KWallet-frontend/dashboard/send"}>
+            <NavLink to={"/dashboard/send"}>
               {({ isActive }) =>
                 isActive ? (
                   <IoIosSend color="#9F7AEA" size={28} />
@@ -45,7 +45,7 @@ const DashboardFooter = () => {
           </Center>
 
           <Center>
-            <NavLink to={"/KWallet-frontend/dashboard/main"}>
+            <NavLink to={"/dashboard/main"}>
               {({ isActive }) =>
                 isActive ? (
                   <MdSpaceDashboard color="#9F7AEA" size={28} />
@@ -57,7 +57,7 @@ const DashboardFooter = () => {
           </Center>
 
           <Center>
-            <NavLink to={"/KWallet-frontend/dashboard/receive"}>
+            <NavLink to={"/dashboard/receive"}>
               {({ isActive }) =>
                 isActive ? (
                   <GiReceiveMoney color="#9F7AEA" size={28} />
@@ -69,7 +69,7 @@ const DashboardFooter = () => {
           </Center>
 
           <Center>
-            <NavLink to={"/KWallet-frontend/dashboard/history"}>
+            <NavLink to={"/dashboard/history"}>
               {({ isActive }) =>
                 isActive ? (
                   <LuHistory color="#9F7AEA" size={28} />

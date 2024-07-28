@@ -33,7 +33,7 @@ const NavBar = ({ onOpen }: Props) => {
       padding="16px"
       boxShadow="0px 0px 10px 4px rgba(212, 224, 229, 0.30)"
     >
-      {pathname !== "/KWallet-frontend/home" && (
+      {pathname !== "/home" && (
         <Box>
           <Show below="lg">
             <IoMenu size="30" onClick={onOpen} cursor="pointer" />
@@ -52,18 +52,16 @@ const NavBar = ({ onOpen }: Props) => {
       </Text>
       <Spacer />
       <ColorModeSwitch />
-      {pathname === "/KWallet-frontend/home" &&
-        !localStorage.getItem("tokenKey") && (
-          <Button colorScheme="purple" borderRadius="24px" p="8px">
-            <NavLink to="/KWallet-frontend/sign-in">Sign In</NavLink>
-          </Button>
-        )}
-      {pathname === "/KWallet-frontend/home" &&
-        localStorage.getItem("tokenKey") && (
-          <Button colorScheme="purple" borderRadius="24px" p="8px">
-            <NavLink to="/KWallet-frontend/dashboard/main">Dashboard</NavLink>
-          </Button>
-        )}
+      {pathname === "/home" && !localStorage.getItem("tokenKey") && (
+        <Button colorScheme="purple" borderRadius="24px" p="8px">
+          <NavLink to="/sign-in">Sign In</NavLink>
+        </Button>
+      )}
+      {pathname === "/home" && localStorage.getItem("tokenKey") && (
+        <Button colorScheme="purple" borderRadius="24px" p="8px">
+          <NavLink to="/dashboard/main">Dashboard</NavLink>
+        </Button>
+      )}
     </HStack>
   );
 };

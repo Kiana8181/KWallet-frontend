@@ -31,7 +31,7 @@ const Intro = () => {
           size="lg"
           borderRadius="24px"
           colorScheme="purple"
-          onClick={() => navigate("/KWallet-frontend/sign-up")}
+          onClick={() => navigate("/sign-up")}
         >
           Let's Get Started
         </Button>

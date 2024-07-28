@@ -68,7 +68,7 @@ const SuccessModal = ({ isOpen, onClose, text }: Props) => {
               colorScheme="purple"
               borderRadius="24px"
               width="100%"
-              onClick={() => navigate("/KWallet-frontend/")}
+              onClick={() => navigate("/")}
             >
               Close
             </Button>

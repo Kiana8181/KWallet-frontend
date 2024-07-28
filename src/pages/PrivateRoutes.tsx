@@ -7,7 +7,7 @@ const PrivateRoutes = () => {
   const data = useUserStore();
   const user = useAuth();
 
-  if (!user) return <Navigate to="/KWallet-frontend/home" />;
+  if (!user) return <Navigate to="/home" />;
 
   useEffect(() => {
     data.setUserUsername(localStorage.getItem("phonenumber")!);

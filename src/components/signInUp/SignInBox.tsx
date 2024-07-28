@@ -22,10 +22,7 @@ const SignInBox = () => {
         </Text>
 
         <Center>
-          <Button
-            sx={ButtonBoxStyles}
-            onClick={() => navigate("/KWallet-frontend/sign-in")}
-          >
+          <Button sx={ButtonBoxStyles} onClick={() => navigate("/sign-in")}>
             SIGN In
           </Button>
         </Center>

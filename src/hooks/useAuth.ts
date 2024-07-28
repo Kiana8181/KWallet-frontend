@@ -11,7 +11,7 @@ const useAuth = () => {
     const token = localStorage.getItem("tokenKey");
 
     if (!token || token !== "LoginWallet") {
-      navigate("/KWallet-frontend/home");
+      navigate("/home");
       return;
     }
   }, []);

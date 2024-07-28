@@ -54,11 +54,7 @@ const SignUp = () => {
         </Box>
       </SimpleGrid>
 
-      <Box
-        right="16px"
-        sx={HomeButtonStyles}
-        onClick={() => navigate("/KWallet-frontend/home")}
-      >
+      <Box right="16px" sx={HomeButtonStyles} onClick={() => navigate("/home")}>
         <IoHomeSharp color="#555555" size="44px" />
       </Box>
     </>
